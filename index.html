@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo project</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Todo App</h2>
+        <div class="input-section">
+            <input type="text" placeholder="Add todo..." id="main-input">
+            <input type="date" id="date-input">
+            <button id="add-button">Add</button>
+            <button id="edit-button">Edit</button>
+        </div>
+        <div class="todos-operator">
+            <div>
+                <button class="fiter-todos" data-filter="all">All</button>
+                <button class="fiter-todos" data-filter="pending">Pending</button>
+                <button class="fiter-todos" data-filter="completed">Completed</button>
+            </div>
+            <button class="red" id="delet-all">Delet All</button>  
+        </div>
+    </div>
+    <div id="show-alert"></div>
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>text</td>
+                    <td>date</td>
+                    <td>pending</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Do</button>
+                        <button class="red">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+   <script src="./script.js"></script> 
+</body>
+</html>
